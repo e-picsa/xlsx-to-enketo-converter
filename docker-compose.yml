@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  xls-to-xform:
+    build: 
+      context: ./xls-to-xform
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-5262}:5262"
+
+  xform-to-enketo:
+    build:
+      context: ./xform-to-enketo
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-5261}:5261" 

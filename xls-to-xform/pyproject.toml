@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "picsa-xlsx-convertor"
+version = "0.1"
+description = "cloud function to convert xlsx to xlsForm formart"
+authors = ["khalifan-kfan <khalifanmuwonge@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+XlsxWriter = "^3.2.0"
+pandas = "^2.2.1"
+pyxform = "^2.0.2"
+fastapi = "^0.110.0"
+python-multipart = "^0.0.9"
+uvicorn = "^0.28.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

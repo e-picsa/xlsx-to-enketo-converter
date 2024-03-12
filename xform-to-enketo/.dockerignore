@@ -1,0 +1,10 @@
+__pycache__/
+venv/
+.env
+*.pyc
+.coverage
+.vscode/
+docker/
+
+uploads/
+node_modules/
