@@ -2,8 +2,10 @@ const express = require("express");
 const multer = require("multer");
 const fs = require("fs").promises;
 const { transform } = require("enketo-transformer"); 
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 const upload =  multer({ dest: "uploads/" });
 
 app.use(express.json());
