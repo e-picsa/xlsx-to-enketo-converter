@@ -49,7 +49,7 @@ async function convertForm(xform) {
   return transform({
     xform: xform,
     theme: "grid",
-    markdown: false,
+    markdown: true,
     preprocess: (doc) => doc,
   });
 }
